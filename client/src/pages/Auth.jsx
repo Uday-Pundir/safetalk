@@ -20,7 +20,8 @@ import { ShieldCheck, AtSign, Lock, Eye, EyeOff, UserPlus, LogIn, ArrowLeft, Shi
 import './Auth.css';
 
 // Server URL — where our Node.js backend is running
-const SERVER_URL = import.meta.env.VITE_SERVER_URL || 'http://localhost:3001';
+const SERVER_URL = import.meta.env.VITE_SERVER_URL || 'https://safetalk-backend-cadu.onrender.com';
+
 
 export default function Auth() {
   // useSearchParams reads the URL: ?mode=login or ?mode=register

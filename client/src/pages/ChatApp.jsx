@@ -20,7 +20,8 @@ import {
 } from 'lucide-react';
 import './ChatApp.css';
 
-const SERVER_URL = import.meta.env.VITE_SERVER_URL || 'http://localhost:3001';
+const SERVER_URL = import.meta.env.VITE_SERVER_URL || 'https://safetalk-backend-cadu.onrender.com';
+
 
 // Emoji list for picker
 const EMOJIS = ['😀','😂','😍','🥰','😎','😭','😤','🤔','👍','👎','❤️','🔥','💯','✅','🎉','🙏','😮','😅','🤣','💪','🙌','👏','😇','🤩','😴','🫡','💀','🫶','✨','🌟','💬','🔒','🛡️','⚡','🎯'];

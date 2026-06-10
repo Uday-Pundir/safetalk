@@ -35,10 +35,15 @@ const server = http.createServer(app);
 // Attach Socket.io to the server
 const io = new Server(server, {
   cors: {
-    origin: process.env.FRONTEND_URL || "http://localhost:5173", // React dev server URL or production Vercel URL
+    origin: [
+      process.env.FRONTEND_URL,
+      "http://localhost:5173",
+      "https://safetalk-client.vercel.app"
+    ].filter(Boolean),
     methods: ["GET", "POST"]
   }
 });
+
 
 /* ================================================
    DATABASE CONNECTION (MONGODB)
