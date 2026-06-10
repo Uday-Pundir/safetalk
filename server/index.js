@@ -119,7 +119,7 @@ app.post('/api/register', async (req, res) => {
     });
   } catch (error) {
     console.error('Error during registration:', error);
-    res.status(500).json({ error: 'Server error during registration' });
+    res.status(500).json({ error: `Server error: ${error.message}` });
   }
 });
 
@@ -146,7 +146,7 @@ app.post('/api/login', async (req, res) => {
     });
   } catch (error) {
     console.error('Error during login:', error);
-    res.status(500).json({ error: 'Server error during login' });
+    res.status(500).json({ error: `Server error: ${error.message}` });
   }
 });
 
