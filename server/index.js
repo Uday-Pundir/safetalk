@@ -43,7 +43,7 @@ const io = new Server(server, {
 /* ================================================
    DATABASE CONNECTION (MONGODB)
 ================================================ */
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb+srv://udaypundir321_db_user:1BLMnOGtCcQMaFC0@cluster0.p1hycee.mongodb.net/safetalk?appName=Cluster0";
+const MONGODB_URI = "mongodb+srv://udaypundir321_db_user:1BLMnOGtCcQMaFC0@cluster0.p1hycee.mongodb.net/safetalk?appName=Cluster0";
 if (MONGODB_URI) {
   mongoose.connect(MONGODB_URI)
     .then(() => console.log('✅ Connected to MongoDB Atlas'))
